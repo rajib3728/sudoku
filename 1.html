@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <title>Level Easy</title>
+    <style>
+      body {
+      background-image: url('img2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+      
+    }
+    </style>
+</head>
+<body>
+  <center>
+    <h1 style="color:black">Level Easy</h1>
+    <h3 style="color: white;">Put value only between 1 to 4</h3>
+  </center>  
+  <center><input type="number"  style="width: 40px; height: 40px;" id="1"><input type="number"  style="width: 40px; height: 40px;" id="2"><input type="number"  style="width: 40px; height: 40px;" id="3"><input type="number"  style="width: 40px; height: 40px;" id="4"></center>
+<center><input type="number" style="width: 40px; height: 40px;" id="5"><input type="number"  style="width: 40px; height: 40px;" id="6"><input type="number" style="width: 40px; height: 40px;" id="7"><input type="number"  style="width: 40px; height: 40px;" id="8"></center>
+<center><input type="number"  style="width: 40px; height: 40px;" id="9"><input type="number"  style="width: 40px; height: 40px;" id="10"><input type="number" style="width: 40px; height: 40px;" id="11"><input type="number"  style="width: 40px; height: 40px;" id="12"></center>
+<center><input type="number"  style="width: 40px; height: 40px;" id="13"><input type="number"  style="width: 40px; height: 40px;" id="14"><input type="number"  style="width: 40px; height: 40px;" id="15"><input type="number"  style="width: 40px; height: 40px;" id="16"></center>
+<br>
+<center><button onclick="fun1()">Submit</button></center>
+<br>
+<center><h1>Result:</h1>
+  <p id="res"></p>
+</center>
+<br>
+<hr>
+<center>
+  <h1>Another one</h1>
+<IFRAME SRC="//widget.websudoku.com/?level=1" WIDTH="300" HEIGHT="300" SCROLLING="no" FRAMEBORDER="0"></IFRAME>
+</center>
+<script>
+
+  function fun1()
+  {
+  
+  var x1=document.getElementById("1").value;
+  var x2=document.getElementById("2").value;
+  var x3=document.getElementById("3").value;
+  var x4=document.getElementById("4").value;
+  var x5=document.getElementById("5").value;
+  var x6=document.getElementById("6").value;
+  var x7=document.getElementById("7").value;
+  var x8=document.getElementById("8").value;
+  var x9=document.getElementById("9").value;
+  var x10=document.getElementById("10").value;
+  var x11=document.getElementById("11").value;
+  var x12=document.getElementById("12").value;
+  var x13=document.getElementById("13").value;
+  var x14=document.getElementById("14").value;
+  var x15=document.getElementById("15").value;
+  var x16=document.getElementById("16").value;
+  var y1=parseInt(x1)+parseInt(x5)+parseInt(x9)+parseInt(x13);
+  var y2=parseInt(x2)+parseInt(x6)+parseInt(x10)+parseInt(x14);
+  var y3=parseInt(x3)+parseInt(x7)+parseInt(x11)+parseInt(x15);
+  var y4=parseInt(x4)+parseInt(x8)+parseInt(x12)+parseInt(x16);
+  var y5=parseInt(x1)+parseInt(x2)+parseInt(x3)+parseInt(x4);
+  var y6=parseInt(x5)+parseInt(x6)+parseInt(x7)+parseInt(x8);
+  var y7=parseInt(x9)+parseInt(x10)+parseInt(x11)+parseInt(x12);
+  var y8=parseInt(x13)+parseInt(x14)+parseInt(x15)+parseInt(x16);
+     if(y1==y2 && y2==y3 && y3==y4 && y4==y5 && y5==y6 && y6==y7 && y7==y8 && y8==10 )
+     {
+      var a=document.getElementById("res");
+      a.innerHTML="correct!";
+      console.log(y8)
+     }
+     else
+     {
+      var b=document.getElementById("res");
+      b.innerHTML="incorrect!";
+      console.log(y8)
+     }
+  }
+</script>
+</body>
+</html>

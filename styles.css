@@ -1,0 +1,60 @@
+body {
+    background-image: url('img1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    
+  }
+#st0
+{
+    color: white;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#st1
+{
+    color:green;
+    background-color:white ;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: green;
+}
+#st1:hover
+{
+    background-color: green;
+    color: white;
+}
+#st2
+{
+    color:blue;
+    background-color:white ;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+#st2:hover
+{
+    background-color: blue;
+    color: white;
+}
+#st3
+{
+    color:red;
+    background-color:white ;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+#st3:hover
+{
+    background-color: red;
+    color: white;
+}

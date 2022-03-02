@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <title>Sudoku</title>
+</head>
+<body>
+    
+   <button style="margin-left: 95%; margin-right: 0%;" onclick="music()"><img src="speaker.png" width="15px" height="15px"></button>
+
+    <center><h1 id="st0">Welcome to sudoku</h1>
+        <h1 style=" color: white;text-shadow: 2px 2px 4px #000000;">Level</h1>
+        </center>
+    <center><button id="st1" onclick="fun1()">Easy</button><button id="st2" onclick="fun2()">Medium</button><button id="st3" onclick="fun3()">Hard</button></center>
+
+    <audio src="music1.wav" id="click"></audio>
+    <audio src="music2.mp3" id="song" autoplay></audio>
+    <center>
+        <h1 style="color: white;">What is sudoku?</h1>
+        <p style="width: 70%; color: white;">
+            Sudoku is played on a grid of 9 x 9 spaces. Within the rows and columns are 9 “squares” (made up of 3 x 3 spaces). 
+            Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9, without repeating any numbers
+             within the row, column or square. Does it sound complicated? As you can see from the image below of an actual Sudoku grid, 
+             each Sudoku grid comes with a few spaces already filled in; the more spaces filled in, the easier the game – the more 
+             difficult Sudoku puzzles have very few spaces that are already filled in.
+        </p>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="color: white;width: 100%; height: 200px;" id="col">
+        <p>
+            follow us:
+        </p>
+        <hr>
+        <img src="facebook.png" width="50px" height="52px" onclick="link1()" style="margin-top: 5px; transform: translateX(4px);">
+        <img src="instrag.png" width="50px" height="52px" onclick="link2()" style="margin-top: 5px;">
+        <img src="linkdin.png" width="39px" height="34px" onclick="link3()" style="margin-bottom: 10px;">
+        <img src="youtube.png" width="37px" height="37px" style="margin-left:8px;margin-bottom: 10px ;" onclick="link5()"> 
+        <p>** to stop autoplay music press speaker button twice</p> 
+        <p>**to play song again press speaker button once</p>                                                        
+        </div>
+    <script src="myscripts.js"></script>
+</body>
+</html>
